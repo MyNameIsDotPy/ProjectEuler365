@@ -23,6 +23,8 @@
     <ClInclude Include="reto01.h" />
     <ClInclude Include="reto02.h" />
     <ClInclude Include="reto03.h" />
+    <ClInclude Include="reto04.h" />
+    <ClInclude Include="reto05.h" />
     <ClInclude Include="retos.h" />
   </ItemGroup>
   <ItemGroup>
@@ -30,6 +32,8 @@
     <ClCompile Include="reto01.cpp" />
     <ClCompile Include="reto02.cpp" />
     <ClCompile Include="reto03.cpp" />
+    <ClCompile Include="reto04.cpp" />
+    <ClCompile Include="reto05.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
