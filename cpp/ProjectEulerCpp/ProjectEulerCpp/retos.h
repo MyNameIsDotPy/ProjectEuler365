@@ -12,8 +12,8 @@ long long int reto08();
 int reto09();
 
 
-int reto10();
-int reto11();
+long long int reto10();
+long long int reto11();
 int reto12();
 int reto13();
 int reto14();
