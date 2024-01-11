@@ -38,6 +38,7 @@
     <ClInclude Include="retos\reto15.h" />
     <ClInclude Include="retos\reto16.h" />
     <ClInclude Include="retos\reto17.h" />
+    <ClInclude Include="retos\reto18.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -1194,6 +1195,7 @@
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
     <ClCompile Include="retos\reto17.cpp" />
+    <ClCompile Include="retos\reto18.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
