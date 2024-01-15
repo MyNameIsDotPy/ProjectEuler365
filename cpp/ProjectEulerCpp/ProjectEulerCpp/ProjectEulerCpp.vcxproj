@@ -42,6 +42,7 @@
     <ClInclude Include="retos\reto19.h" />
     <ClInclude Include="retos\reto20.h" />
     <ClInclude Include="retos\reto21.h" />
+    <ClInclude Include="retos\reto22.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -1273,9 +1274,10 @@
     </ClCompile>
     <ClCompile Include="retos\reto20.cpp" />
     <ClCompile Include="retos\reto21.cpp" />
+    <ClCompile Include="retos\reto22.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="files\" />
+    <Content Include="files\0022_names.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
