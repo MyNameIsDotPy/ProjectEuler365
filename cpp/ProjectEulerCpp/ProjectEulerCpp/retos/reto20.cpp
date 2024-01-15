@@ -39,7 +39,7 @@ int reto20()
     }
 
     int sum = 0;
-    for(int i = 0; i<factorial.size(); i++)
+    for(int i = 0; i < factorial.size(); i++)
     {
         sum += factorial[i];
     }
