@@ -31,12 +31,10 @@ int reto23()
         
             if(numbers_sum == n)
             {
-                //std::cout << n << ": true" << std::endl;
                 break;
             }
             if(i>=j)
             {
-                //std::cout << n << ": false" << std::endl;
                 total_sum+=n;
                 break;
             }

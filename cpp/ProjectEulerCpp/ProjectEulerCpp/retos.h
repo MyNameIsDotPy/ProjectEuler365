@@ -1,5 +1,6 @@
 ﻿#ifndef RETOS_H
 #define RETOS_H
+#include <string>
 
 int reto01();
 int reto02();
@@ -28,7 +29,7 @@ int reto20();
 int reto21();
 int reto22();
 int reto23();
-int reto24();
+std::string reto24();
 int reto25();
 int reto26();
 int reto27();
