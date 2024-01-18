@@ -15,7 +15,6 @@ std::string reto24()
     for(int i = 1; i <= 10; i++)
     {
         int j = remain/factorial(n-i);
-        std::cout << numbers[j] << std::endl;
         answer += numbers[j];
         remain = remain % factorial(n-i);
         numbers.erase(numbers.begin()+j);

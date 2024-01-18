@@ -45,6 +45,7 @@
     <ClInclude Include="retos\reto22.h" />
     <ClInclude Include="retos\reto23.h" />
     <ClInclude Include="retos\reto24.h" />
+    <ClInclude Include="retos\reto25.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -1279,6 +1280,7 @@
     <ClCompile Include="retos\reto22.cpp" />
     <ClCompile Include="retos\reto23.cpp" />
     <ClCompile Include="retos\reto24.cpp" />
+    <ClCompile Include="retos\reto25.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="files\0022_names.txt" />
