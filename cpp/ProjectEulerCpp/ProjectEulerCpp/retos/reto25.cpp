@@ -1,6 +1,5 @@
 ﻿#include "reto25.h"
 
-#include <iostream>
 #include <vector>
 
 
@@ -21,7 +20,6 @@ int reto25()
         b = a;
         a = c;
     }
-    
     
     return i+2;
 }
@@ -59,5 +57,4 @@ void sum_vectors(std::vector<int>& a, std::vector<int>& b, std::vector<int>& c)
     {
         c.push_back(carry);
     }
-    return;
 }
