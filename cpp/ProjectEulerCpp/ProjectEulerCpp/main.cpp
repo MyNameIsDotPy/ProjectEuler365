@@ -3,6 +3,6 @@
 #include "iostream"
 int main()
 {
-    std::cout << reto30();
+    std::cout << reto31();
     return 0;
 }
