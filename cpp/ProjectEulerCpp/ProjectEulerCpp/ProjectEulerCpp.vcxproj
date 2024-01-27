@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="functions.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="retos.h" />
     <ClInclude Include="retos\reto01.h" />
@@ -54,8 +55,10 @@
     <ClInclude Include="retos\reto31.h" />
     <ClInclude Include="retos\reto32.h" />
     <ClInclude Include="retos\reto33.h" />
+    <ClInclude Include="retos\reto34.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="functions.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="retos\reto01.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
@@ -1297,6 +1300,7 @@
     <ClCompile Include="retos\reto31.cpp" />
     <ClCompile Include="retos\reto32.cpp" />
     <ClCompile Include="retos\reto33.cpp" />
+    <ClCompile Include="retos\reto34.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="files\0022_names.txt" />

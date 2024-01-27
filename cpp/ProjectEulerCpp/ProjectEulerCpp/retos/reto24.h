@@ -2,6 +2,7 @@
 
 class reto24
 {
-public:
-    
+    public:
 };
+
+

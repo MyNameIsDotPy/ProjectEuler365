@@ -1,10 +1,9 @@
 ﻿#include "reto24.h"
-
+#include "../functions.h"
 #include <iostream>
 #include <string>
- 
 
-int factorial(int n);
+
 
 std::string reto24()
 {
@@ -23,9 +22,3 @@ std::string reto24()
     return answer;
 }
 
-int factorial(int n)
-{
-    if(n==0)
-        return 1;
-    return n*factorial(n-1);
-}
