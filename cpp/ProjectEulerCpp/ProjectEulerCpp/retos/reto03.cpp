@@ -1,5 +1,6 @@
 ﻿#include "reto03.h"
-#include "cmath"
+#include <cmath>
+#include "../functions.h"
 
 /*
     The prime factors of 13195 are 5, 7, 13 and 29.
@@ -22,14 +23,4 @@ int reto03()
     return max_factor;
 }
 
-bool is_prime(int x)
-{
-    for(int i = 2; i<sqrt(x); i++)
-    {
-        if(x%i==0)
-        {
-            return false;
-        }
-    }
-    return true;
-}
+
