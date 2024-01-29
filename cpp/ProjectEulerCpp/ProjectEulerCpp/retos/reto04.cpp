@@ -1,5 +1,5 @@
 ﻿#include "reto04.h"
-#include <cmath>
+#include "../functions.h"
 
 /*
     A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is
@@ -7,9 +7,7 @@
     Find the largest palindrome made from the product of two 3-digit numbers.
 */
 
-int num_lenght(int x);
-bool is_palindromic(int x);
-bool is_palindromic(int x, int length);
+
 
 int reto04()
 {
@@ -27,27 +25,5 @@ int reto04()
     return max_palindromic;
 }
 
-bool is_palindromic(const int x)
-{
-    return is_palindromic(x, num_lenght(x));
-}
 
-bool is_palindromic(const int x, const int length)
-{
-    int a = static_cast<int>(x / (pow(10, length-1)));
-    int b = x%10;
-    
-    if(length == 0 || length == 1) return true;
-    if(length == 2 && a==b) return true;
-    
-    return a==b && is_palindromic((x/10)-a*pow(10, length-2), length-2);
-}
 
-int num_lenght(const int x)
-{
-    if(x>10)
-    {
-        return num_lenght(x/10) + 1;
-    }
-    return 1;
-}

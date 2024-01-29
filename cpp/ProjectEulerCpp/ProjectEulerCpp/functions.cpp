@@ -66,3 +66,43 @@ bool is_prime(int n)
     }
     return true;
 }
+
+int num_lenght(const int x)
+{
+    if(x>10)
+    {
+        return num_lenght(x/10) + 1;
+    }
+    return 1;
+}
+
+bool is_palindromic(const int x)
+{
+    return is_palindromic(x, num_lenght(x));
+}
+
+bool is_palindromic(const int x, const int length)
+{
+    int a = static_cast<int>(x / (pow(10, length-1)));
+    int b = x%10;
+    
+    if(length == 0 || length == 1) return true;
+    if(length == 2 && a==b) return true;
+    
+    return a==b && is_palindromic((x/10)-a*pow(10, length-2), length-2);
+}
+
+bool is_palindromic(std::string x)
+{
+    int i = 0, j = x.length()-1;
+    while(i<=j)
+    {
+        if(x[i] != x[j])
+        {
+            return false;
+        }
+        i++;
+        j--;
+    }
+    return true;
+}
