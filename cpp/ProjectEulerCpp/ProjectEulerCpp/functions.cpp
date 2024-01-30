@@ -1,6 +1,7 @@
 ﻿#include "functions.h"
 
 #include <cmath>
+#include <set>
 
 int factorial(int n)
 {
@@ -57,7 +58,10 @@ int* generate_primes_below_n(const int n)
 
 bool is_prime(int n)
 {
-    for(int i = 2; i<sqrt(n); i++)
+    if(n<2)
+        return false;
+    
+    for(int i = 2; i-1 <sqrt(n); i += 1)
     {
         if(n%i==0)
         {
@@ -65,6 +69,24 @@ bool is_prime(int n)
         }
     }
     return true;
+}
+
+bool is_prime(int n, int* primes)
+{
+    if(n<2)
+        return false;
+    int i = 0, p = 2;
+    while(p > 0)
+    {
+        p = primes[i];
+        if(n%p==0 && n!=p)
+            return false;
+        if(n<p)
+            
+            return true;
+        i++;
+    }
+    return false;
 }
 
 int num_lenght(const int x)
