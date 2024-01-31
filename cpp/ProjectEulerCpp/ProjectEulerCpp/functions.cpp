@@ -91,7 +91,7 @@ bool is_prime(int n, int* primes)
 
 int num_lenght(const int x)
 {
-    if(x>10)
+    if(x>=10)
     {
         return num_lenght(x/10) + 1;
     }
