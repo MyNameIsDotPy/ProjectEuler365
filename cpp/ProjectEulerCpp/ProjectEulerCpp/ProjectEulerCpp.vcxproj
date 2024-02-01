@@ -60,6 +60,7 @@
     <ClInclude Include="retos\reto36.h" />
     <ClInclude Include="retos\reto37.h" />
     <ClInclude Include="retos\reto38.h" />
+    <ClInclude Include="retos\reto39.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="functions.cpp" />
@@ -1309,6 +1310,7 @@
     <ClCompile Include="retos\reto36.cpp" />
     <ClCompile Include="retos\reto37.cpp" />
     <ClCompile Include="retos\reto38.cpp" />
+    <ClCompile Include="retos\reto39.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="files\0022_names.txt" />
