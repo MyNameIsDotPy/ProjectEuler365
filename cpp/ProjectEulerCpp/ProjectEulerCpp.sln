@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectEulerCpp", "ProjectEulerCpp\ProjectEulerCpp.vcxproj", "{980CDE65-C225-4E4B-97F8-5E608FB3E2B7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectEulerCpp", "ProjectEulerCpp\ProjectEulerCpp.vcxproj", "{95C94699-8837-4EB3-9A72-9FB8983F2E53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,13 +10,13 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{980CDE65-C225-4E4B-97F8-5E608FB3E2B7}.Debug|Win32.ActiveCfg = Debug|Win32
-		{980CDE65-C225-4E4B-97F8-5E608FB3E2B7}.Debug|Win32.Build.0 = Debug|Win32
-		{980CDE65-C225-4E4B-97F8-5E608FB3E2B7}.Debug|x64.ActiveCfg = Debug|x64
-		{980CDE65-C225-4E4B-97F8-5E608FB3E2B7}.Debug|x64.Build.0 = Debug|x64
-		{980CDE65-C225-4E4B-97F8-5E608FB3E2B7}.Release|Win32.ActiveCfg = Release|Win32
-		{980CDE65-C225-4E4B-97F8-5E608FB3E2B7}.Release|Win32.Build.0 = Release|Win32
-		{980CDE65-C225-4E4B-97F8-5E608FB3E2B7}.Release|x64.ActiveCfg = Release|x64
-		{980CDE65-C225-4E4B-97F8-5E608FB3E2B7}.Release|x64.Build.0 = Release|x64
+		{95C94699-8837-4EB3-9A72-9FB8983F2E53}.Debug|Win32.ActiveCfg = Debug|Win32
+		{95C94699-8837-4EB3-9A72-9FB8983F2E53}.Debug|Win32.Build.0 = Debug|Win32
+		{95C94699-8837-4EB3-9A72-9FB8983F2E53}.Debug|x64.ActiveCfg = Debug|x64
+		{95C94699-8837-4EB3-9A72-9FB8983F2E53}.Debug|x64.Build.0 = Debug|x64
+		{95C94699-8837-4EB3-9A72-9FB8983F2E53}.Release|Win32.ActiveCfg = Release|Win32
+		{95C94699-8837-4EB3-9A72-9FB8983F2E53}.Release|Win32.Build.0 = Release|Win32
+		{95C94699-8837-4EB3-9A72-9FB8983F2E53}.Release|x64.ActiveCfg = Release|x64
+		{95C94699-8837-4EB3-9A72-9FB8983F2E53}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 EndGlobal
