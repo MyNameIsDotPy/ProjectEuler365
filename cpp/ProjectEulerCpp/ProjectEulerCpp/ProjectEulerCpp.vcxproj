@@ -65,6 +65,7 @@
     <ClCompile Include="retos\reto38.cpp" />
     <ClCompile Include="retos\reto39.cpp" />
     <ClCompile Include="retos\reto40.cpp" />
+    <ClCompile Include="retos\reto41.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="functions.h" />
@@ -110,6 +111,7 @@
     <ClInclude Include="retos\reto38.h" />
     <ClInclude Include="retos\reto39.h" />
     <ClInclude Include="retos\reto40.h" />
+    <ClInclude Include="retos\reto41.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

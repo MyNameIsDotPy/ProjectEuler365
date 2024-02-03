@@ -1,6 +1,7 @@
 ﻿#include "functions.h"
 
 #include <cmath>
+#include <iostream>
 #include <set>
 
 int factorial(int n)
@@ -36,6 +37,7 @@ int* generate_n_primes(const int n)
 int* generate_primes_below_n(const int n)
 {
     int* primes = new int[n];
+    std::cout << "Space Created\n";
     int i, idx = 0, prime = 2;
     while(prime < n)
     {
@@ -51,7 +53,14 @@ int* generate_primes_below_n(const int n)
             primes[idx] = prime;
             idx++;
         }
-        prime++;
+        if(prime == 2)
+        {
+            prime++;
+        }
+        else
+        {
+            prime += 2;
+        }
     }
     return primes;
 }
