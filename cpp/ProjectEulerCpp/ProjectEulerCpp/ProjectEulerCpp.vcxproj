@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="files\0022_names.txt" />
+    <Content Include="files\0042_words.txt" />
     <Content Include="ProjectEulerCpp.vcxproj.filters" />
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +67,7 @@
     <ClCompile Include="retos\reto39.cpp" />
     <ClCompile Include="retos\reto40.cpp" />
     <ClCompile Include="retos\reto41.cpp" />
+    <ClCompile Include="retos\reto42.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="functions.h" />
@@ -112,6 +114,7 @@
     <ClInclude Include="retos\reto39.h" />
     <ClInclude Include="retos\reto40.h" />
     <ClInclude Include="retos\reto41.h" />
+    <ClInclude Include="retos\reto42.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

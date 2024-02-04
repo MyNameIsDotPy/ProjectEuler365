@@ -12,5 +12,5 @@ int num_lenght(int x);
 bool is_palindromic(int x);
 bool is_palindromic(int x, int length);
 bool is_palindromic(std::string x);
-
+int triangular_num(int n);
 #endif

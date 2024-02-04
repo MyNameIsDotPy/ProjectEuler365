@@ -137,3 +137,8 @@ bool is_palindromic(std::string x)
     }
     return true;
 }
+
+int triangular_num(const int n)
+{
+    return n*(n+1)/2;
+}

@@ -5,6 +5,6 @@
 int main()
 {
     
-    std::cout << reto41();
+    std::cout << reto42();
     return 0;
 }
