@@ -52,7 +52,7 @@ int reto39();
 int reto40();
 int reto41();
 int reto42();
-int reto43();
+long long int reto43();
 int reto44();
 int reto45();
 int reto46();
