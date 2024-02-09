@@ -11,92 +11,78 @@ int factorial(int n)
     return n*factorial(n-1);
 }
 
-int* generate_n_primes(const int n)
+std::set<int> generate_n_primes(const int n)
 {
-    int* primes = new int[n];
-    int i, idx = 0, prime = 2;
-    while(idx < n)
+    std::set<int> primes = {2};
+    for(unsigned int i = 3; primes.size() < n; i += 2)
     {
-        for(i = 0; i<idx; i++)
+        bool prime = true;
+        for(auto p: primes)
         {
-            if(prime%primes[i]==0)
-            {
+            if(p*p > i)
                 break;
-            }
-        }
-        if(i==idx)
-        {
-            primes[idx] = prime;
-            idx++;
-        }
-        prime++;
-    }
-    return primes;
-}
-
-int* generate_primes_below_n(const int n)
-{
-    int* primes = new int[n];
-    std::cout << "Space Created\n";
-    int i, idx = 0, prime = 2;
-    while(prime < n)
-    {
-        for(i = 0; i<idx; i++)
-        {
-            if(prime%primes[i]==0)
-            {
-                break;
-            }
-        }
-        if(i==idx)
-        {
-            primes[idx] = prime;
-            idx++;
-        }
-        if(prime == 2)
-        {
-            prime++;
-        }
-        else
-        {
-            prime += 2;
-        }
-    }
-    return primes;
-}
-
-bool is_prime(int n)
-{
-    if(n<2)
-        return false;
-    
-    for(int i = 2; i-1 <sqrt(n); i += 1)
-    {
-        if(n%i==0)
-        {
-            return false;
-        }
-    }
-    return true;
-}
-
-bool is_prime(int n, int* primes)
-{
-    if(n<2)
-        return false;
-    int i = 0, p = 2;
-    while(p > 0)
-    {
-        p = primes[i];
-        if(n%p==0 && n!=p)
-            return false;
-        if(n<p)
             
-            return true;
-        i++;
+            if(i%p==0)
+            {
+                prime = false;
+                break;
+            }
+        }
+        if(prime)
+            primes.insert(i);
     }
-    return false;
+    return primes;
 }
+
+std::set<int> generate_primes_below_n(const int n)
+{
+    std::set<int> primes = {2};
+    for(unsigned int i = 3; i < n; i += 2)
+    {
+        bool prime = true;
+        for(auto p: primes)
+        {
+            if(p*p > i)
+                break;
+            
+            if(i%p==0)
+            {
+                prime = false;
+                break;
+            }
+        }
+        if(prime)
+            primes.insert(i);
+    }
+    return primes;
+}
+
+bool is_prime(int n) {
+    if (n <= 1) {
+        return false; // 1 or less is not prime
+    }
+    if (n <= 3) {
+        return true; // 2 and 3 are prime
+    }
+    if (n % 2 == 0 || n % 3 == 0) {
+        return false; // Divisible by 2 or 3
+    }
+
+    // Efficiently check divisibility up to sqrt(n)
+    for (int i = 5; i * i <= n; i += 6) { // Increment by 6 to skip even numbers
+        if (n % i == 0 || n % (i + 2) == 0) {
+            return false; // Divisible by i or i + 2
+        }
+    }
+
+    return true; // No divisors found, n is prime
+}
+
+bool is_prime(int n, std::set<int> primes)
+{
+    return primes.count(n) != 0;
+}
+
 
 int num_lenght(const int x)
 {

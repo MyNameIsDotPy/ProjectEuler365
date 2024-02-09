@@ -7,7 +7,7 @@
 
 int reto37()
 {
-    int* primes = generate_primes_below_n(1000000);
+    std::set<int> primes = generate_primes_below_n(1000000);
     std::cout << "primes generated" << std::endl;
     int primes_found = 0;
     int total_sum = 0;

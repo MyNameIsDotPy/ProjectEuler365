@@ -14,8 +14,11 @@ int reto35()
 {
     std::cout << is_prime(14) << std::endl;
     int sum = 0;
-    int* primes = generate_primes_below_n(1000000);
-    for(int n = 0; primes[n] > 0; n++)
+    std::set<int> primes = generate_primes_below_n(1000000);
+
+    //TODO: UPDATE CHALLENGE WITH NEW GENERATE PRIMES IMPLEMENTATION
+    
+    /*for(int n = 0; primes[n] > 0; n++)
     {
         int prime = primes[n];
         int size = number_digits(prime);
@@ -34,7 +37,7 @@ int reto35()
             std::cout << prime << std::endl;
             sum++;
         }
-    }
+    }*/
     return sum;
 }
 

@@ -4,10 +4,10 @@
 #include <string>
 
 int factorial(int n);
-int* generate_n_primes(int n);
-int* generate_primes_below_n(int n);
+std::set<int> generate_n_primes(int n);
+std::set<int> generate_primes_below_n(int n);
 bool is_prime(int n);
-bool is_prime(int n, int* primes);
+bool is_prime(int n, std::set<int> primes);
 int num_lenght(int x);
 bool is_palindromic(int x);
 bool is_palindromic(int x, int length);
