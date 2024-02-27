@@ -26,6 +26,4 @@ def reto14():
     return idx
 
 
-
-
 print(reto14())
